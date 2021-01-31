@@ -5,6 +5,7 @@ from datetime import datetime, timedelta, date
 
 date = datetime.now()
 
+
 """
 # Use todays date to get the name on the day of the week written in a short 
 # form with the first letter capitalized (e.g) 'Fri' if today were Friday and 
@@ -26,14 +27,15 @@ Prints the results in this exact formart
 
 """
 if day == "Mon" or day == "Tue" or day == "Wen" or day =="Thu" or day == "Fri":
-    print("Date:", date)
-    print("Day:" + day)
-    print('Fare: 100')
+    fare = 100
+   
 elif day == "Sat":
-    print("Date:", date)
-    print("Day:" + day)
-    print('fare:60')
+    fare = 60
+    
 else: 
-    print("Date:", date)
-    print("Day:" + day)
-    print('fare:80')
+    fare = 80
+    
+
+print("Date:", date.date())
+print("Day:" + day)
+print("Fare:", fare)
